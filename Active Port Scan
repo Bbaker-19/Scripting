@@ -3,8 +3,8 @@ Date: 4/19/2025
 
 #!/bin/bash
 
-echo "Enter the target IP address or hostname:"
+echo "Enter the target IP address or hostname to scan:"
 read target_ip
 
-echo "These are the open ports on $target_ip"
+echo "These are the active/listening ports on $target_ip"
 netstat -tuln $target_ip | grep succeeded
