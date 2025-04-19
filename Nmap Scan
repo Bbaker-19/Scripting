@@ -7,4 +7,4 @@ echo "Enter the target IP address or hostname:"
 read target_ip
 
 echo "These are the open ports on $target_ip"
-netstat -zv $target_ip | grep succeeded
+nc -zv $target_ip | grep succeeded
